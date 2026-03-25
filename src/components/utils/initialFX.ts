@@ -4,8 +4,14 @@ import { smoother } from "../../utils/gsapUtils";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
-  smoother.paused(false);
+
+  // ✅ FIX: prevent null error
+  if (smoother) {
+    smoother.paused(false);
+  }
+
   document.getElementsByTagName("main")[0].classList.add("main-active");
+
   gsap.to("body", {
     backgroundColor: "#0a0e17",
     duration: 0.5,
@@ -19,6 +25,7 @@ export function initialFX() {
       linesClass: "split-line",
     }
   );
+
   gsap.fromTo(
     landingText.chars,
     { opacity: 0, y: 80, filter: "blur(5px)" },
@@ -36,6 +43,7 @@ export function initialFX() {
   const TextProps = { type: "chars,lines", linesClass: "split-h2" };
 
   const landingText2 = new SplitText(".landing-h2-info", TextProps);
+
   gsap.fromTo(
     landingText2.chars,
     { opacity: 0, y: 80, filter: "blur(5px)" },
@@ -61,6 +69,7 @@ export function initialFX() {
       delay: 0.8,
     }
   );
+
   gsap.fromTo(
     [".header", ".icons-section", ".nav-fade"],
     { opacity: 0 },
