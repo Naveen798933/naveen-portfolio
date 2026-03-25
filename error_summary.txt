@@ -1,0 +1,16 @@
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\components\Character\Scene.tsx
+  159:21 react-hooks/exhaustive-deps: The ref value 'canvasDiv.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'canvasDiv.current' to a variable inside the effect, and use that variable in the cleanup function.
+  168:6 react-hooks/exhaustive-deps: React Hook useEffect has missing dependencies: 'character', 'setLoading', and 'theme'. Either include them or remove the dependency array.
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\components\Loading.tsx
+  34:6 react-hooks/exhaustive-deps: React Hook useEffect has a missing dependency: 'setIsLoading'. Either include it or remove the dependency array.
+  95:14 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\components\Navbar.tsx
+  14:12 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\components\WhatIDo.tsx
+  20:20 react-hooks/exhaustive-deps: The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function.
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\context\LoadingProvider.tsx
+  16:14 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
+  37:14 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+C:\Users\HP\OneDrive\Documents\Naveen-portfolio-main\Naveen-portfolio-main\src\context\ThemeContext.tsx
+  5:14 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+  40:14 react-refresh/only-export-components: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.

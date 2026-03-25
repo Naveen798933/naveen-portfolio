@@ -1,0 +1,54 @@
+.education-section {
+    padding: 100px 0;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.edu-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.edu-info h5 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.edu-year {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+    .education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

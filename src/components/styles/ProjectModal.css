@@ -1,0 +1,181 @@
+.project-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-modal-content {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  background: var(--backgroundColor);
+  border: 1px solid var(--cardBorder);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--textColor);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s;
+}
+
+.modal-close-btn:hover {
+  background: var(--accentColor);
+  color: white;
+}
+
+.modal-inner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-image-col {
+  flex: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.modal-image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info-col {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-category {
+  color: var(--secondaryAccent);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.modal-title {
+  color: var(--textColor);
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.modal-description p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.modal-tools h3 {
+  color: var(--textColor);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.tools-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tool-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--cardBorder);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: var(--textColor);
+  font-size: 13px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accentColor);
+  color: white;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--textColor);
+  border: 1px solid var(--cardBorder);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 900px) {
+  .modal-inner {
+    flex-direction: column;
+  }
+  .modal-image-col {
+    min-height: 250px;
+  }
+  .modal-info-col {
+    padding: 25px;
+  }
+  .modal-title {
+    font-size: 32px;
+  }
+}

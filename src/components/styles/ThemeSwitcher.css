@@ -1,0 +1,54 @@
+.theme-switcher-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 9999;
+    background: var(--cardBackground);
+    border: 1px solid var(--cardBorder);
+    color: var(--textColor);
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.theme-switcher-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accentColor);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.theme-icon {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--accentColor);
+}
+
+.theme-label {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Specific button styles per theme */
+.theme-cyberpunk {
+    text-shadow: 0 0 5px var(--accentColor);
+}
+.theme-matrix {
+    border-radius: 4px; /* More blocky for matrix */
+    font-family: monospace;
+}
+
+@media screen and (max-width: 768px) {
+    .theme-switcher-btn {
+        top: 20px;
+        right: 20px;
+    }
+}
