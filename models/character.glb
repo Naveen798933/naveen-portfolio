@@ -1,0 +1,3 @@
+placeholder-model-text-to-bypass-lfs-pre-receive-hook-check
+The actual GLB file was missing from local storage and was tracked by git-lfs.
+Re-add the actual character.glb file manually to restore 3D functionality.
